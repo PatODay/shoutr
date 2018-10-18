@@ -1,5 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  # Adding from `clearance` Configure the mailer to create full URLs in emails:
+  # This line isn't necessary for test
+  config.action_mailer.default_url_options = { host: 'example.com' }
 
   # The test environment is used exclusively to run your application's
   # test suite. You never need to work with it otherwise. Remember that
